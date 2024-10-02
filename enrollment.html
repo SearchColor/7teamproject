@@ -64,7 +64,8 @@
     // Firebase 인스턴스 초기화
     const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
-    const storage = getStorage(app, "gs://sparta-35587.appspot.com");
+    // const storage = getStorage(app, "gs://sparta-35587.appspot.com");
+    const storage = getStorage(app);
 
     async function editMember(docId, data) {
       selectedDocId = docId;
